@@ -6,67 +6,67 @@
 # ============================================================
 
 project:
-  name: "[Project Title]"
-  slug: "[project-title-lowercase-hyphenated]"   # Used for folder names, URLs
+  name: "Bike Sales Analysis"
+  slug: "bike-sales-analysis"
   version: "1.0.0"
-  status: "completed"                             # Options: in-progress | completed | archived
-  last_updated: "YYYY-MM-DD"
+  status: "completed"
+  last_updated: "2026-09-27"
 
 author:
-  name: "[Your Full Name]"
-  role: "[Your Role or Title]"
-  github: "[github_username]"
-  linkedin: "[linkedin_profile_url]"
-  email: "[optional]"
+  name: "Reem"
+  role: "Junior Data Analyst"
+  github: "reemKamal21"
+  linkedin: "https://www.linkedin.com/in/reem-awyes-6a88a3310/"
+  email: "reem.aweys21@gmail.com"
 
 project_type:
-  primary: "[e.g., exploratory-analysis]"        # See taxonomy below
+  primary: "dashboard"
   secondary:
-    - "[e.g., dashboard]"
-    - "[e.g., data-pipeline]"
+    - "exploratory-analysis"
+    - "data-cleaning"
 
-# PROJECT TYPE TAXONOMY (pick what applies):
-# exploratory-analysis | sql-analysis | dashboard | data-pipeline
-# predictive-model | data-cleaning | reporting | visualization
-# end-to-end | automation | other
-
-domain: "[e.g., finance / healthcare / marketing / operations / education / other]"
+domain: "retail"
 
 tools:
   languages:
-    - "[e.g., Python 3.11]"
-    - "[e.g., SQL]"
-  libraries:
-    - "[e.g., pandas 2.0]"
-    - "[e.g., matplotlib 3.7]"
+    - "DAX"
+  libraries: []
   platforms:
-    - "[e.g., GitHub]"
-    - "[e.g., Google Colab]"
+    - "GitHub"
   visualization:
-    - "[e.g., Power BI]"
-    - "[e.g., Tableau]"
-    - "[e.g., Plotly]"
+    - "Power BI"
 
 data:
   sources:
-    - name: "[Source name]"
-      type: "[csv / api / database / web-scrape / manual / public-dataset]"
-      access: "[public / private / simulated / anonymized]"
-  row_count_approx: "[e.g., 50000]"
-  date_range:
-    start: "YYYY-MM-DD"
-    end: "YYYY-MM-DD"
+    - name: "Bike Sales Transaction Log"
+      type: "public-dataset"
+      access: "public"
+  row_count_approx: 752
+  
 
 outputs:
-  - type: "[notebook / dashboard / report / csv / script / slides]"
-    path: "[relative/path/to/output]"
-    description: "[One-line description]"
+  - type: "dataset"
+    path: "data/raw/Raw_data.xlsx"
+    description: "Original, unmodified sales transaction log"
+  - type: "dataset"
+    path: "data/processed/proceesed_data_.xlsx"
+    description: "Cleaned dataset with 5 added calculated columns"
+  - type: "dashboard"
+    path: "dashboard/Dashboard.pbix"
+    description: "Interactive Power BI dashboard"
+  - type: "slides"
+    path: "reports/Report.pptx"
+    description: "5-question narrative slide report"
 
 dependencies:
-  file: "[requirements.txt / environment.yml / packages.R / none]"
-  notes: "[Any setup instructions or environment caveats]"
+  file: "none"
+  notes: "Power BI Desktop is required to open Dashboard.pbix"
 
 tags:
-  - "[keyword-1]"
-  - "[keyword-2]"
-  - "[keyword-3]"
+  - "bike-sales"
+  - "power-bi"
+  - "dax"
+  - "excel"
+  - "exploratory-data-analysis"
+  - "dashboard"
+  - "portfolio"
